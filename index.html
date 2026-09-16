@@ -3,11 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>girasu</title>
+
+  <title>今日のgirasu占い</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
+
 <body>
-  <h1>girasu</h1>
-  <p>girasuの遊び場
-  </p>
+  <h1>girasuの遊び場</h1>
+  <main class="card">
+    <div class="icon">🔮</div>
+
+    <h1>今日のgirasu占い</h1>
+    <p>名前を入れると、今日の運勢が分かります。</p>
+
+    <form id="fortune-form">
+      <input
+        id="name"
+        type="text"
+        maxlength="30"
+        placeholder="名前を入力"
+        required
+      >
+
+      <button type="submit">占う</button>
+    </form>
+
+    <section id="result" class="result">
+      <p id="result-name"></p>
+      <div id="fortune" class="fortune"></div>
+      <p id="message"></p>
+
+      <p class="lucky">
+        ラッキーアイテム：
+        <strong id="lucky-item"></strong>
+      </p>
+    </section>
+  </main>
 </body>
 </html>
