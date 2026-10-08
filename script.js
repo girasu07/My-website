@@ -18,10 +18,10 @@ const messages = [
 
 const luckyItems = [
   "長すぎるLANケーブル",
-  "温かいお茶",
   "焼きマシュマロ",
   "USB Type-Cケーブル",
-  "猫の画像"
+  "猫の画像",
+  "ネキ"
 ];
 
 const form = document.getElementById("fortune-form");
